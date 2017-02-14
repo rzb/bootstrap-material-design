@@ -1,0 +1,41 @@
+// quick and dirty update for noUiSlider 9.2.0
+// make sure you include this file after bootstrap material design stylesheet
+// @todo update vertical slider and merge into _plugin-nouislider.scss
+
+.noUi-horizontal {
+	height: 0.25rem;
+}
+.noUi-horizontal .noUi-handle {
+	width: 1rem;
+    height: 1rem;
+    left: -0.5rem;
+    top: -0.375rem;
+}
+.noUi-target {
+	background: rgba(0,0,0,.26);
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+}
+.noUi-connect {
+	background: $brand-primary;
+	box-shadow: none;
+}
+.noUi-handle {
+	border-radius: 50%;
+    box-shadow: none;
+    background: $brand-primary;
+    border: 0;
+    cursor: pointer;
+}
+.noUi-active {
+	box-shadow: none;
+}
+.noUi-handle:before,
+.noUi-handle:after {
+	content: none;
+}
+.noUi-handle.noUi-active {
+	transform: scale3d(1.5, 1.5, 1);
+}
